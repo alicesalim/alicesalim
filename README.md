@@ -9,8 +9,8 @@
   
 
 <div style="display: flex; align-items: center;">
-  <img src="https://github-readme-stats.vercel.app/api?username=alicesalim&show_icons=true&theme=dracula&hide_border=true&bg_color=00000000" alt="Anurag's GitHub stats">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=alicesalim&theme=dracula&hide_border=true&bg_color=00000000" alt="Top Langs">
+  <img src="https://github-readme-stats.vercel.app/api?username=alicesalim&show_icons=true&theme=dracula&hide_border=true&bg_color=00000000&cache_seconds=0" alt="Alice's GitHub stats">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=alicesalim&theme=dracula&hide_border=true&bg_color=00000000&cache_seconds=0" alt="Top Langs">
 </div>
 
 <div style="display: flex; align-items: center;">
