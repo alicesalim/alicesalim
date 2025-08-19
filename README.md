@@ -17,7 +17,7 @@
   <a href="https://www.linkedin.com/in/alice-antunes-3b104030b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app">
     <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn Badge" style="height: 50px;">
   </a>
-  <a href="mailto:alicesalimka@gmail.com">
+  <a href="mailto:alice.salim.khouri@gmail.com">
     <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="LinkedIn Badge" style="height: 50px;">
   </a>
 </div>
