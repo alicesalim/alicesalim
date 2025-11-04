@@ -18,6 +18,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           echo "<!-- updated $(date) -->" >> README.md
-          git add README.md
-          git commit -m "🔄 Atualiza dados do perfil" || echo "Nada para atualizar"
-          git push
+          git add README.md || echo "Nada para adicionar"
+          git commit -m "🔄 Atualiza dados do perfil" || echo "Nada para commitar"
+          git pull --rebase origin main || echo "Nada para puxar"
+          git push origin main || echo "Push falhou, verifique permissões"  
