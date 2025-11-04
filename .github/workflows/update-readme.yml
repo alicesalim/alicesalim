@@ -1,15 +1,35 @@
-name: Update README Stats
+name: Update GitHub Profile Data
 
 on:
   schedule:
-    - cron: '0 */12 * * *' # Atualiza a cada 12h
-  workflow_dispatch: # Permite rodar manualmente
+    - cron: '0 */12 * * *'  # Atualiza a cada 12 horas
+  workflow_dispatch:         # Permite executar manualmente
 
 jobs:
-  update-readme:
+  update:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Atualiza stats
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      # Atualiza os stats e linguagens do Readme Stats
+      - name: Generate GitHub Stats
         uses: anuraghazra/github-readme-stats@master
         env:
-          GITHUB_TOKEN: ${{ secrets.READMETK}}
+          GITHUB_TOKEN: ${{ secrets.READMETK }}
+
+      # Atualiza o gráfico de atividade (commits públicos e privados)
+      - name: Generate Activity Graph
+        uses: Ashutosh00710/github-readme-activity-graph@master
+        env:
+          GITHUB_TOKEN: ${{ secrets.READMETK }}
+
+      # Atualiza o README para garantir o refresh
+      - name: Push changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add .
+          git commit -m "🔄 Atualiza dados do perfil" || echo "Nada a atualizar"
+          git push
