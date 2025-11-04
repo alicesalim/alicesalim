@@ -1,0 +1,15 @@
+name: Update README Stats
+
+on:
+  schedule:
+    - cron: '0 */12 * * *' # Atualiza a cada 12h
+  workflow_dispatch: # Permite rodar manualmente
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Atualiza stats
+        uses: anuraghazra/github-readme-stats@master
+        env:
+          GITHUB_TOKEN: ${{ secrets.READMETK}}
