@@ -15,13 +15,13 @@ jobs:
 
       # Atualiza os stats e linguagens do Readme Stats
       - name: Generate GitHub Stats
-        uses: anuraghazra/github-readme-stats@master
+        uses: anuraghazra/github-readme-stats@main
         env:
           GITHUB_TOKEN: ${{ secrets.READMETK }}
 
       # Atualiza o gráfico de atividade (commits públicos e privados)
       - name: Generate Activity Graph
-        uses: Ashutosh00710/github-readme-activity-graph@master
+        uses: Ashutosh00710/github-readme-activity-graph@main
         env:
           GITHUB_TOKEN: ${{ secrets.READMETK }}
 
