@@ -9,9 +9,12 @@
   
 
 <div style="display: flex; align-items: center;">
-  <img src="https://github-readme-stats.vercel.app/api?username=alicesalim&show_icons=true&theme=dracula&hide_border=true&bg_color=00000000&cache_seconds=0" alt="Alice's GitHub stats">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=alicesalim&theme=dracula&hide_border=true&bg_color=00000000&cache_seconds=0" alt="Top Langs">
+  <img src="https://github-readme-stats.vercel.app/api?username=alicesalim&show_icons=true&theme=dracula&hide_border=true&bg_color=00000000&token=${{ secrets.READMETK }}" alt="Alice's GitHub stats">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=alicesalim&theme=dracula&hide_border=true&bg_color=00000000&token=${{ secrets.READMETK }}" alt="Top Langs">
 </div>
+
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=alicesalim&theme=dracula&hide_border=true&bg_color=00000000&token=${{ secrets.READMETK }}" width="100%" alt="Activity Graph"/>
+
 
 <div style="display: flex; align-items: center;">
   <a href="https://www.linkedin.com/in/alice-antunes-80b56431b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app">
