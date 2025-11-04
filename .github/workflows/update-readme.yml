@@ -15,7 +15,7 @@ jobs:
 
       # Atualiza o gráfico de atividade (commits públicos e privados)
       - name: Generate activity graph
-        uses: Ashutosh00710/github-readme-activity-graph@master
+        uses: Ashutosh00710/github-readme-activity-graph@main
         env:
           GITHUB_TOKEN: ${{ secrets.READMETK }}
 
